@@ -1,0 +1,189 @@
+@layer reset {
+    *,
+    *::after,
+    *::before {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      margin: unset;
+    }
+    button,
+    input,
+    textarea,
+    select {
+      font: inherit;
+    }
+    img,
+    picture,
+    svg,
+    canvas {
+      display: block;
+      max-inline-size: 100%;
+      block-size: auto;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
+}
+:root{
+  --Nutmeg: hsl(14, 45%, 36%);
+  --Dark-Raspberry: hsl(332, 51%, 32%);
+  --White: hsl(0, 0%, 100%);
+  --Rose-White: hsl(330, 100%, 98%);
+  --Eggshell: hsl(30, 54%, 90%);
+  --Light-Grey: hsl(30, 18%, 87%);
+  --Wenge-Brown: hsl(30, 10%, 34%);
+  --Dark-Charcoal: hsl(24, 5%, 18%);
+}
+body{
+  background-color: var(--Eggshell);
+}
+.wrapper{
+  background-color: #fff;
+  max-width: 600px;
+}
+h1,h2,h3{
+  font-family: 'Young Serif', serif;
+}
+h2, h3{
+  margin-bottom: 1rem;
+  color: var(--Nutmeg);
+}
+li,p{
+  font-family: 'Outfit', sans-serif;
+  color: var(--Wenge-Brown);
+}
+li::marker{
+  color: var(--Nutmeg);
+  font-weight: 700;
+}
+article, header{
+  max-width: 316px;
+  margin: auto;
+}
+.section-marker{
+  margin: 1.5rem 0;
+}
+ul,ol{
+  margin-left: 1rem;
+}
+.list-content{
+  position: relative;
+  left: 1rem;
+}
+header{
+  margin-top: 2rem;
+  margin-bottom: 1.1rem;
+  color: var(--Dark-Charcoal);
+}
+.preparation{
+  background-color: var(--Rose-White);
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  padding: 1rem 3rem 1.5rem 2rem;
+  border-radius: 8px;
+}
+.bold-text{
+  font-weight: 700;
+  color: #474545;
+}
+.preparation ul li:nth-child(1), .preparation ul li:nth-child(2){
+  margin-bottom: 1rem;
+}
+.preparation li{
+  line-height: 1.5rem;
+}
+.ingredients li{
+  line-height: 1.5rem;
+}
+.instructions li{
+  line-height: 1.5rem;
+  margin-bottom: 1.3rem;
+}
+.nutrition{
+  margin-bottom: 2rem;
+  font-family: 'outfit', sans-serif;
+  color: var(--Wenge-Brown);
+}
+.nutrition p{
+  margin-bottom: 1rem;
+}
+.nutrition hr{
+  margin: 0.5rem 0;
+}
+.nutrition div{
+  display: flex;
+  margin-left: 2rem;
+}
+.nutrient-quantity{
+  color: var(--Nutmeg);
+  font-weight: 600;
+}
+.calories{
+  gap: 5rem;
+}
+.carbs{
+  gap: 6rem;
+}
+.protein{
+  gap: 5.4rem;
+}
+.fat{
+  gap: 7rem;
+}
+footer{
+  padding: 1rem 0;
+  background-color: var(--Rose-White);
+  height: 100%;
+  border-radius: 10px;
+}
+@media screen and (min-width:32rem){
+  .wrapper{
+    border-radius: 10px;
+    margin: 3rem auto;
+  }
+  .inner-wrapper{
+    padding: 1.6rem;
+  }
+  body{
+    background-color: var(--Eggshell);
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+  }
+  article, header{
+    max-width: 100%;
+    margin: auto;
+  }
+  header{
+    margin-top: 1.5rem;
+    margin-bottom: 1.1rem;
+    color: var(--Dark-Charcoal);
+  }
+  .page_img img{
+    border-radius: 10px;
+  }
+  .calories{
+    gap: 15rem;
+  }
+  .carbs{
+    gap: 16rem;
+  }
+  .protein{
+    gap: 15.4rem;
+  }
+  .fat{
+    gap: 17rem;
+  }
+  
+}
