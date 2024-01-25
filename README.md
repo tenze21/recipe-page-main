@@ -22,7 +22,7 @@ I took up this problem to refresh my knowledge of **HTML** symantics. I have car
 ### Links
 
 - Solution URL: [View my solution on frontend mentor page.](https://your-solution-url.com)
-- Live Site URL: [let me take you to the lave site](https://your-live-site-url.com)
+- Live Site URL: [let me take you to the lave site](https://recipe-page-main-jade.vercel.app/)
 
 ## My process
 As usual I thoroughly inspected the design and started planning on using proper **HTML** elements by reading about them on the MDN web docsas this challenge was all about proper *HTML symantics*.
